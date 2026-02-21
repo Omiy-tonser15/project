@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function ServiceStatus() {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("user")); // 🔥 Get current user
+  const user = JSON.parse(localStorage.getItem("user")); // to Get current user
 
   const [bookings, setBookings] = useState([]);
   const [services, setServices] = useState([]);
@@ -21,7 +21,7 @@ function ServiceStatus() {
 
   useEffect(() => {
     api.get("bookings/").then(res => {
-      // 🔥 Filter bookings to show only current user's bookings
+      //  Filter bookings to show only current user's bookings
       const userBookings = res.data.filter(b => b.customer?.id === user.customer_id);
       setBookings(userBookings);
     });
@@ -60,7 +60,7 @@ function ServiceStatus() {
     <div
       style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
-      {/* ================= HEADER ================= */}
+      {/* HEADER */}
       <nav className="navbar navbar-dark bg-dark px-4">
         <h4 className="text-white">Garage System</h4>
         <button className="btn btn-secondary" onClick={() => navigate("/dashboard")}>
@@ -171,7 +171,7 @@ function ServiceStatus() {
         </table>
       </div>
 
-      {/* ================= FOOTER ================= */}
+      
       <Footer />
     </div>
   );

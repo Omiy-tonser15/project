@@ -16,10 +16,10 @@ function Login() {
         password: password,
       });
 
-      // Success
+      
       alert(res.data.message);
 
-      // Save user info in localStorage (optional)
+      
       localStorage.setItem("user", JSON.stringify(res.data));
 
       // Redirect kulingana na role

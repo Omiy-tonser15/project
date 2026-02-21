@@ -17,7 +17,7 @@ function UserDashboard() {
         flexDirection: "column"
       }}
     >
-      {/* ============ NAVBAR ============ */}
+      
       <nav className="navbar navbar-dark bg-dark px-4">
         <h4 className="text-white mb-0">Garage System</h4>
         <button className="btn btn-danger" onClick={logout}>
@@ -25,7 +25,7 @@ function UserDashboard() {
         </button>
       </nav>
 
-      {/* ============ CONTENT ============ */}
+      
       <div className="container mt-4" style={{ flex: 1 }}>
         <h3 className="mb-4 fw-bold">Welcome to Your Dashboard</h3>
 
@@ -60,7 +60,7 @@ function UserDashboard() {
         </div>
       </div>
 
-      {/* ============ FOOTER ============ */}
+      
       <Footer />
     </div>
   );

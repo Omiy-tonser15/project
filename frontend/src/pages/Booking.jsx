@@ -27,7 +27,7 @@ function Booking() {
     try {
       await api.post("bookings/", formData);
       alert("✅ Booking successful");
-      navigate("/dashboard");  // 🔥 Home redirect
+      navigate("/dashboard");  
     } catch (err) {
       alert("❌ Booking failed");
       console.error(err.response?.data || err);
@@ -38,7 +38,7 @@ function Booking() {
     <div
       style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
-      {/* ================= HEADER ================= */}
+      {/* HEADER */}
       <nav className="navbar navbar-dark bg-dark px-4">
         <h4 className="text-white">Garage System</h4>
         <button className="btn btn-secondary" onClick={() => navigate("/dashboard")}>
@@ -95,7 +95,7 @@ function Booking() {
         </form>
       </div>
 
-      {/* ================= FOOTER ================= */}
+     
       <Footer />
     </div>
   );

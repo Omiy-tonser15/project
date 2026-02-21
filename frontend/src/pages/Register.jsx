@@ -29,7 +29,7 @@ function Register() {
       // Save user info (optional)
       localStorage.setItem("user", JSON.stringify(res.data));
 
-      // Redirect to UserDashboard
+      
       navigate("/dashboard");
 
     } catch (err) {

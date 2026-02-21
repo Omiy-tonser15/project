@@ -34,7 +34,7 @@ function AdminDashboard() {
         flexDirection: "column"
       }}
     >
-      {/* ================= HEADER ================= */}
+     {/* HEADER */}
       <nav className="navbar navbar-dark bg-dark px-4">
         <h4 className="text-white">Garage System</h4>
         <button className="btn btn-danger" onClick={logout}>
@@ -42,7 +42,7 @@ function AdminDashboard() {
         </button>
       </nav>
 
-      {/* ================= CONTENT ================= */}
+      
       <div className="container my-5" style={{ flex: 1 }}>
         <h4 className="fw-bold text-danger mb-4">
           🧑‍💼 Admin Dashboard
@@ -113,7 +113,7 @@ function AdminDashboard() {
         </div>
       </div>
 
-      {/* ================= FOOTER ================= */}
+      
       <Footer />
     </div>
   );
