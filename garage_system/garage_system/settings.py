@@ -83,7 +83,13 @@ STATIC_URL = 'static/'
 
 # CORS configuration
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # URL ya React dev server
+    "http://localhost:5173",
+    # URL ya React dev server
+    "https://project-pi-coral-31.vercel.app",
+]
+
+CSRF_TRUSTED_ORIGIN = [
+    "https://project-pi-coral-31.vercel.app"
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
