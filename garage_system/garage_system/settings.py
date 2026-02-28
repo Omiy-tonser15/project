@@ -94,6 +94,3 @@ if os.environ.get('CREATE_SUPERUSER') == 'True':
     User = get_user_model()
     if not User.objects.filter(username='omar').exists():
         User.objects.create_superuser('omar', 'omar@gmail.com', 'omar15')
-        print("✅ Superuser omar created")
-    else:
-        print("ℹ️ Superuser omar already exists")
